@@ -33,12 +33,11 @@ class Song
   end
 
   def self.genre_count
-    
+
 
     @@genres.collect do |key, value|
       if @@genres.include?(key)
-        hash = {}
-           hash << @@genres[value] += 1
+       @@genres[value] += 1
 
       else
         @@genres[value] = [key]
