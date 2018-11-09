@@ -35,11 +35,12 @@ class Song
   def self.genre_count
 
 binding.pry
+
     @@genres.collect do |key, value|
       if @@genres.include?(key)
            @@genres[value] += 1
            @@genres
-      el
+      else
         @@genres[value] = [key]
       end
     end
