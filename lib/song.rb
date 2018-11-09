@@ -34,9 +34,10 @@ class Song
 
   def self.genre_count
 
-new_count = Hash.new(0)
+  new_count = Hash.new(0)
 
     @@genres.each do |key, value|
+      binding.pry
       if @@genres.include?(key)
        new_count << @@genres[value] += 1
 
