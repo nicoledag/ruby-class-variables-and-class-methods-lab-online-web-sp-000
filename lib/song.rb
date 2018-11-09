@@ -37,14 +37,15 @@ class Song
   new_count = Hash.new
 
     @@genres.each do |genre|
-      binding.pry
       if new_count[genre]
        new_count[genre] += 1
 
       else
        new_count[genre] = 1
       end
+
     end
+      new_count
   end
 
   def self.artist_count
