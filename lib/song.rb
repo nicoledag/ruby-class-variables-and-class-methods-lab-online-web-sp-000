@@ -34,8 +34,7 @@ class Song
 
   def self.genre_count
 
-  
-
+binding.pry
     @@genres= Hash.new(0)
 
     @@genres.collect do |key, value|
