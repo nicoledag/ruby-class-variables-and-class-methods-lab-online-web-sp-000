@@ -38,11 +38,11 @@ class Song
 
     @@genres.each do |genre|
       binding.pry
-      if @@genres.include?(key)
-       new_count << @@genres[value] += 1
+      if new_count[genre]
+       new_count[genre] += 1
 
       else
-        @@genres[value] = [key]
+       new_count[genre] = 1
       end
     end
   end
