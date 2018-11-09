@@ -36,7 +36,7 @@ class Song
 
   new_count = Hash.new(0)
 
-    @@genres.each do |key, value|
+    @@genres.each do |genre|
       binding.pry
       if @@genres.include?(key)
        new_count << @@genres[value] += 1
