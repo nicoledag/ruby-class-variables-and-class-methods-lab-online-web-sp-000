@@ -36,7 +36,7 @@ class Song
 
 new_count = Hash.new(0)
 
-    @@genres.collect do |key, value|
+    @@genres.each do |key, value|
       if @@genres.include?(key)
        new_count << @@genres[value] += 1
 
