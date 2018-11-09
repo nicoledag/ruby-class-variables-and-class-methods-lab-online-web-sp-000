@@ -33,7 +33,7 @@ class Song
   end
 
   def self.genre_count
-    binding.pry
+    
 
     @@genres.collect do |key, value|
       if @@genres.include?(key)
