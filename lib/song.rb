@@ -38,7 +38,7 @@ binding.pry
 
     @@genres.collect do |key, value|
       if @@genres.include?(key)
-           @@genres[value.to_i] += 1
+           @@genres[value] += 1
            @@genres
       else
         @@genres[value] = [key]
