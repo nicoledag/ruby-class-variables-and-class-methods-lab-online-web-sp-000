@@ -39,7 +39,7 @@ binding.pry
     @@genres.collect do |key, value|
       if @@genres.include?(key)
            @@genres[value] += 1
-           @@genres
+  
       else
         @@genres[value] = [key]
       end
