@@ -37,7 +37,8 @@ class Song
 
     @@genres.collect do |key, value|
       if @@genres.include?(key)
-           @@genres[value] += 1
+        hash = {}
+           hash << @@genres[value] += 1
 
       else
         @@genres[value] = [key]
